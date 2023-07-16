@@ -10,15 +10,64 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    body {
+      background-color: #D6E1F0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .component {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .content {
+      max-width: 200px;
+      background-color: white;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .qr-image {
+      max-width: 100%;
+      border-radius: 9px;
+    }
+
+    .content-text {
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+    }
+
+    .card-title {
+      font-size: small;
+      color: #243149;
+    }
+
+    .card-info {
+      font-size:x-small;
+      color: #9FA2A8;
+    }
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
 
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+  <div class="component">
+    <div class="content">
+      <img src="./images/image-qr-code.png" alt="" class="qr-image">
+      <div class="content-text">
+        <h3 class="card-title">
+          Improve your front-end skills by building projects
+        </h3>
+        <p class="card-info">
+          Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+        </p>
+      </div>
+    </div>
+  </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
